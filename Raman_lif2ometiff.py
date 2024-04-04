@@ -73,8 +73,7 @@ def process_raman_image_to_ometiff(lif_path, output_base_dir):
             for channel_index in range(num_channels):
 
                 # # Initialize a 3D numpy array to store all Raman shift data for the channel
-                # np.uint8 here
-                raman_shift_data = np.zeros((size_t, size_y, size_x), dtype=np.uint8)
+                raman_shift_data = np.zeros((size_t, size_y, size_x), dtype=np.uint8) # np.uint8 here
 
                 # For each channel, iterate over Raman shifts
                 for t_index in range(size_t):
